@@ -1,0 +1,31 @@
+Get http://localhost:8006/beneficiary/
+#####
+POST http://localhost:8006/beneficiary/add
+Content-Type:application/json 
+
+{
+    #"beneficiaryId": 1105,
+    "accountNumber": 987456,
+    "beneficiaryName": "Zara",
+    "ifscCode": "89564Zara"
+}
+
+####
+PUT http://localhost:8006/beneficiary/update
+Content-Type:application/json 
+
+{
+    "beneficiaryId": 1101,
+    "accountNumber": 874560,
+    "beneficiaryName": "Aarthi",
+    "ifscCode": "164266Aarthi"
+}
+
+####
+DELETE http://localhost:8006/beneficiary/1108
+
+############################
+GET http://localhost:8006/beneficiary/1105
+
+####
+GET http://localhost:8006/beneficiary/1

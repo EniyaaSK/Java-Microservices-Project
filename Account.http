@@ -1,0 +1,33 @@
+GET http://localhost:1234/account/get
+
+####
+POST http://localhost:1234/account/add
+Content-Type: application/json
+
+{ 
+    "accountNumber": 4856320,
+    "accountBalance": 620000,
+    "accountHolder": "Krish",
+    "beneficiaryId": 1101
+}
+
+####
+
+PUT http://localhost:1234/account/update
+Content-Type: application/json
+
+{
+    "accountNumber": 8512023,
+    "accountBalance": 180000,
+    "accountHolder": "Sivangi",
+    "beneficiaryId": 1104
+}
+
+####
+DELETE http://localhost:1234/account/202
+
+###########################
+GET http://localhost:1234/account/byBeneficiary/1105
+
+###
+GET http://localhost:1234/account/byBeneficiary/1
